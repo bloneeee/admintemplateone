@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #ddd;
+
+    padding: 0;
+    margin: 0;
+}
+
+.lines1, .lines2, .lines3{
+    width: 25px;
+    height: 3px;
+    margin: 6px;
+}
+
+.crossxs .lines1{
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.crossxs .lines2{
+    opacity: 0;
+}
+
+.crossxs .lines3{
+    transform: rotate(45deg) translate(-6px, -6px);
+}
