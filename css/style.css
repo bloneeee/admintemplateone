@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: #333;
+}
+
 body{
     font-family: 'Lato', sans-serif;
     background-color: #ddd;
@@ -36,7 +40,7 @@ body{
 /* start left sidebar */
 .sidebars{
     min-height: 100vh;
-    background-color: #333;
+    background-color: var(--primary-color);
 }
 
 .sidebarlinks{
@@ -68,5 +72,29 @@ body{
 }
 
 /* end left sidebar */
+
+/* start top sidebar */
+
+.topnavbars{
+    background-color: var(--primary-color);
+}
+
+.iconparents{
+    position: relative;
+}
+
+.iconbullets::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
+
+/* end top sidebar */
 
 /* End Left Sidebar Section */
