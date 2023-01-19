@@ -73,6 +73,10 @@ body{
 
 /* end left sidebar */
 
+/* End Left Sidebar Section */
+
+/* Start Top Sidebar Section */
+
 /* start top sidebar */
 
 .topnavbars{
@@ -81,6 +85,10 @@ body{
 
 .iconparents{
     position: relative;
+}
+
+.iconbullets i{
+    color: #888;
 }
 
 .iconbullets::after{
@@ -95,6 +103,23 @@ body{
     top: 5px;
 }
 
+.breadcrumb a{
+    color: #f4f4f4;
+}
+
 /* end top sidebar */
 
-/* End Left Sidebar Section */
+/* End Top Sidebar Section */
+
+/* Start Content Section */
+
+.cardboxs{
+    transition: all 0.3s;
+}
+
+.cardboxs:hover{
+    box-shadow: 1px 3px 3px #bbb;
+    transform: translateY(-1px);
+}
+
+/* End Content Section */
