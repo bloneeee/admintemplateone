@@ -123,3 +123,11 @@ body{
 }
 
 /* End Content Section */
+
+/* Start Users Permission */
+
+.borderends{
+    border-right: 3px solid skyblue;
+}
+
+/* End Users Permission */
