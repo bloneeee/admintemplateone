@@ -130,4 +130,25 @@ body{
     border-right: 3px solid skyblue;
 }
 
+/* start pagination */
+
+.pagination > li > a{
+    color: #000;
+    border: 1px solid silver;
+}
+
+.pagination > li.active > a{
+    background-color: grey;
+    color: #fff;
+    border: 1px solid grey;
+}
+
+.pagination > li > a:hover{
+    background-color: #eee;
+    color: #000;
+    border-color: #ddd;
+}
+
+/* end pagination */
+
 /* End Users Permission */
