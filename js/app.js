@@ -80,3 +80,22 @@ function drawTitleSubtitle() {
 }
 
 // End Viewer Report
+
+// Start Sale Analysis
+
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+    type: 'doughnut', // bar, line, doughnut, pie, radar, polarArea, scatter
+
+    data: {
+        labels: ['Cash', 'Visa', 'MPU', 'Mobile Banking'],
+        datasets: [{
+            // label: '# of Votes',
+            data: [40, 10, 20, 30],
+            // borderWidth: 5
+        }]
+    },
+});
+
+// End Sale Analysis
