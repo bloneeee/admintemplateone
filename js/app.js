@@ -29,6 +29,14 @@ $(document).ready(function(){
     });
 
     // End Users Permission
+
+    // Start Quick Sales
+
+    $("#datepicker").datepicker({
+        numberOfMonths: 2
+    });
+
+    // End Quick Sales
 });
 
 // Javascript Area
@@ -99,3 +107,11 @@ new Chart(ctx, {
 });
 
 // End Sale Analysis
+
+// Start Footer 
+
+const getyear = document.getElementById('getyear');
+const getfullyear = new Date().getFullYear();
+getyear.textContent = getfullyear;
+
+// End Footer
