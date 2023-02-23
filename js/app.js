@@ -33,7 +33,7 @@ $(document).ready(function(){
     // Start Quick Sales
 
     $("#datepicker").datepicker({
-        numberOfMonths: 2
+        numberOfMonths: 3
     });
 
     // End Quick Sales

@@ -35,6 +35,57 @@ body{
     transform: rotate(45deg) translate(-6px, -6px);
 }
 
+/* Start Site Setting */
+
+.sitesettings{
+    background-color: #f4f4f4;
+
+    padding: 10px;
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 100;
+}
+
+.sitesettings .sitesettings-item{
+    background-color: #f9f9f9;
+    padding: 5px;
+    margin: 10px 0;
+    opacity: 0.5;
+}
+
+.sitesettings .sitesettings-item:hover{
+    opacity: 1;
+}
+
+.ani-rotates{
+    animation: myanirotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes myanirotate{
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+/* End Site Setting */
+
 /* Start Left Sidebar Section */
 
 /* start left sidebar */
@@ -69,6 +120,12 @@ body{
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+@media(max-width: 768px){
+    .sidebars, .topnavbars{
+        position: static;
+    }
 }
 
 /* end left sidebar */
@@ -152,3 +209,11 @@ body{
 /* end pagination */
 
 /* End Users Permission */
+
+/* Start Quick Sales */
+
+#datepicker{
+    overflow-x: scroll;
+}
+
+/* End Quick Sales */
